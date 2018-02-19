@@ -1,6 +1,6 @@
 #include "share/atspre_staload.hats"
+#include "mylibies.hats"
 #include "monoid_strptr.dats"
-#include "fixity.hats"
 
 implement main0 () =
   let
