@@ -11,9 +11,9 @@ Using [atspkg](http://github.com/vmchale/atspkg), add the following to
   dependencies = prelude.mapPlainDeps [ "monoid" ]
 ```
 
-And include the following in your `.dats` file:
+And include the something like the following in your `.dats` file:
 
 ```ats
-#include "mylibies.hats"
-#include "monoid_strptr.dats"
+#include "$PATSHOMELOCS/monoid-0.1.0/mylibies.hats"
+#include "$PATSHOMELOCS/monoid-0.1.0/monoid_strptr.dats"
 ```
