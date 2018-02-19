@@ -4,6 +4,9 @@ symintr <+>
 
 absvtype monoid_type = ptr
 
+typedef absurd = {a:t0p} @{ f = a -> a }
+
+vtypedef absurd_vt = {a:vt0p} @{ f = a -> a }
 vtypedef monoid = monoid_type
 
 fun mplus(a : !monoid, b : !monoid) : monoid

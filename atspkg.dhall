@@ -4,7 +4,8 @@ in prelude.default //
   { test = 
     [ prelude.bin //
       { src = "test/test.dats"
-      , target = "target/monoid" 
+      , target = "target/monoid"
       }
     ]
+  , dependencies = prelude.mapPlainDeps [ "specats" ]
   }
