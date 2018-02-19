@@ -15,6 +15,6 @@ overload <+> with mplus of 20
 
 fun mzero() : monoid
 
-fun mconcat(a : List_vt(monoid)) : monoid
+fun mconcat(a : !List_vt(monoid)) : monoid
 
 fun mtimes(a : monoid, b : int) : monoid
