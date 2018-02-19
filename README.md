@@ -1,0 +1,3 @@
+# monoid
+
+Monoids for ATS.
