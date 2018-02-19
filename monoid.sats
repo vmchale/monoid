@@ -8,7 +8,7 @@ vtypedef monoid = monoid_type
 
 fun mplus(a : !monoid, b : !monoid) : monoid
 
-overload <+> with mplus
+overload <+> with mplus of 20
 
 fun mzero() : monoid
 
