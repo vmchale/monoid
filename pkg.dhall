@@ -1,4 +1,5 @@
-let makePkg = https://raw.githubusercontent.com/vmchale/atspkg/master/dhall/make-pkg.dhall
+let prelude = https://raw.githubusercontent.com/vmchale/atspkg/master/dhall/atspkg-prelude.dhall
 
 in λ(x : List Integer) → 
-  makePkg { x = x, name = "monoid", githubUsername = "vmchale" }
+  prelude.makePkg { x = x, name = "monoid", githubUsername = "vmchale" }
+    // { description = [ "Monoids in ATS" ] : Optional Text }
