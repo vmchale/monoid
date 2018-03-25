@@ -1,10 +1,14 @@
 let prelude = https://raw.githubusercontent.com/vmchale/atspkg/master/dhall/atspkg-prelude.dhall
 
-in prelude.default //
+in prelude.default ⫽ 
   { test = 
-    [ prelude.bin //
+    [ prelude.bin ⫽ 
       { src = "test/test.dats"
       , target = "target/monoid"
+      }
+    , prelude.bin ⫽ 
+      { src = "test/test1.dats"
+      , target = "target/monoid1"
       }
     ]
   , dependencies = prelude.mapPlainDeps [ "specats" ]

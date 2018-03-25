@@ -1,17 +1,9 @@
-infixl 50 <+>
-
-symintr <+>
-
 absvtype monoid_type = ptr
 
-typedef absurd = {a:t0p} @{ f = a -> a }
-
-vtypedef absurd_vt = {a:vt0p} @{ f = a -> a }
 vtypedef monoid = monoid_type
 
+// TODO what should this return?
 fun mplus(a : !monoid, b : !monoid) : monoid
-
-overload <+> with mplus of 20
 
 fun mzero() : monoid
 

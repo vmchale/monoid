@@ -1,6 +1,7 @@
 #include "share/atspre_staload.hats"
 #include "mylibies.hats"
 #include "monoid_strptr.dats"
+#include "monoid_generic.dats"
 
 implement main0 () =
   let
