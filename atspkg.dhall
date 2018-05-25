@@ -12,4 +12,5 @@ in prelude.default ⫽
       }
     ]
   , dependencies = prelude.mapPlainDeps [ "specats" ]
+  , compiler = [0,3,10]
   }
